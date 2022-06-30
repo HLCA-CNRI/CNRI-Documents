@@ -165,3 +165,62 @@
   - 부생수소와 추출수소는 그레이수소라 하는데, 화석연료를 기반으로 하기 때문에 태생적으로 생산과정에서 많은 온실가스가 발생
   - 재생에너지를 사용하여 생산한 수전해수소는 생산과정에서 이산화탄소를 배출하지 않아 그린수소라는 명칭으로 불리어짐
 - 블루수소 : 그레이수소 생산과정에서 발생한 이산화탄소를 포집·활용·저장(Carbon Capture Utilization and Storage: CCUS) 기술을 적용하여 생산한 수소
+
+##### 2006*IPCC_Guideline*번역본-제2권-에너지
+
+- 국가 온실가스 인벤토리
+- 고정 연소(Stationary combustion)
+  - 일반적으로 에너지 부문 온실가스 배출의 약 70%를 차지한다. 이들 배출의 절반가량은 발전소 및 정유공장 등의 에너지 산업에서의 연소에서 이루어진다.
+- 이동 연소(Mobile combustion)
+  - (도로 및 기타 교통)의 경우는 에너지 부문 배출의 약 4분의 1정도를 보이고 있다
+- 탈루적 배출(Fugitive Emission)
+- 배출계수
+- 간접 온실가스 (INDIRECT GREENHOUSE GASES)
+- 배출원 카테고리(에너지 부문)
+  - 1차 에너지원의 탐사 및 개발
+  - 정유공장 및 발전소에서 1차 에너지원을 사용이 용이한 형태로 전환
+  - 연료의 운송 및 배분
+  - 고정형 및 이동형 기기에서 연료의 사용
+- 일산화탄소(CO)
+- 비메탄 휘발성 유기화합물(NMVOCs ; non-methane volatile organic compounds)
+- non-CO2 가스
+  - 위의 일산화탄소, 비메탄 휘발성 유기화합물 등
+- 연료 유형(원유, 오리멀젼, 천연가스액, ...)
+- 줄(joules), 테라줄(terajoules)
+- 발열량(calorific values), 순 발열량(net calorific values) (NCVs), 총 발열량(gross calorific values) (GCV)
+- 수증기의 잠열(latent heat)
+- 총 CV(Gross CV) (GCV) 내지 '고위발열량(higher heating value)' (HHV)는 실험실 조건 하에서의 발열량이다.
+- 순 CV(Net CV) (NCV) 내지 '저위발열량(lower heating value' (LHV)는 보일러(boiler plant)에서 유용한 발열량이다. 차이는 본질적으로 생산된 수증기의 잠열(latent heat)이다.
+- 바이오매스 (Biomass)
+- 시계열 일관성(Time Series Consistency)
+- 산화(oxidation)
+- 화석 탄화수소(fossil hydrocarbons)
+- 공급원료(feedstocks)
+- 용제(solvents)
+- Tier 1: 국가 에너지 통계로부터 나온 연료 소비량 및 기본 배출계수
+- Tier 2: 국가 에너지 통계로부터 나온 연료 소비량 및 가능한 경우에 국가 연료 특성으로부터 도출된 국가 고유의 배출계수
+- Tier 3: 연료 소비 및 저감기술에 적합한 배출계수와 함께 적용된 연소기술에 대한 자료; 이는 이용 가능한 경우에 모형 및 시설수준의 배출자료를 이용하는 것을 포함한다
+- 차량주행거리(Vehicle Kilometers Travelled, VKT)
+- 지층가스(seam gas)
+
+##### Scope3_Calculation_Guidance_0
+
+- Scope 3 Categories
+  - Upstream
+    - 1: Purchased Goods and Services
+    - 2: Capital Goods
+    - 3: Fuel- and Energy-Related Activities Not Included in Scope 1 or Scope 2
+    - 4: Upstream Transportation and Distribution
+    - 5: Waste Generated in Operations
+    - 6: Business Travel
+    - 7: Employee Commuting
+    - 8: Upstream Leased Assets
+  - Downstream
+    - 9: Downstream Transportation and Distribution
+    - 10: Processing of Sold Products
+    - 11: Use of Sold Products
+    - 12: End-of-Life Treatment of Sold Products
+    - 13: Downstream Leased Assets
+    - 14: Franchises
+    - 15: Investments
+- cradle-to-gate
