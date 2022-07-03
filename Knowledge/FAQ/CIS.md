@@ -2,8 +2,6 @@
 
 > CIS 프로젝트 수행 도중 이에 관련하여 알아야 할, 혹은 궁금한 사항 모음
 
-## CIS
-
 1. CIS가 무엇의 약자인가요? → Carbon Intensity Simulator
    1. 무슨 의미인가요? → 탄소 배출량, 제품 생산량을 통한 탄소집약도 계산
 2. 어떻게 탄소 배출량을 계산하나요? → 현재는 배출권거래제 방법론을 통해 산정하며 글로벌 표준인 Greenhouse Gas Protocol로도 업데이트할 예정
@@ -56,3 +54,31 @@
 14. 청정수소 인증제가 무엇인가요?
 
     → 수소를 생산하기 위해 배출하는 탄소를 LCA 관점에서 배출량이 특정 기준 이하일 떄는 '청정'수소라고 정의하고 그러한 수소를 판매하는 사업자에게 인센티브 제공하기 위한 제도
+
+## CIS Product - Inner Concepts
+
+- 탄소 배출량 계산
+  - CO2 / CH4 / N20 -> 각 기체별 탄소 배출량이 다름
+  - <u>Quantity</u> \* Emission Factor
+    - 에너지 사용량: 연료 -> 연소
+    - 투입량 -> 공정
+  - 배출 종류
+    - 연소(탄화수소 + 산소 = 물 + CO2)
+    - 공정(화학 반응)
+    - 탈루(fugitive emission): ex. 천연가스 파이프라인 내부 압력 조절 과정에서의 배출
+  - CO2e: CO2 equivalent = CO2 환산 배출량
+    - 온실가스를 모두 CO2로 환산한 값
+      - cuz CO2가 온실가스의 대부분을 차지하기 때문
+- Scope 1, 2, 3
+
+  - Scope 1: 직접배출량(연소, 공정 포함)
+  - Scope 2: 간접배출량 중 전기, 스팀
+  - Scope 3(Upstream): Scope 1, 2 제와한 나머지
+
+- LCI DB (Scope 3 중 Upstream의 Emission Factor)
+
+  - Upstream Emission Factor가 모여 있는 것
+  - CIS에는 Upstream Category 1(Purchased Goods and Services) 하나만 들어가 있음
+  - LCI DB는 결국 Upstream Category 1의 Emission Factor라고 할 수 있음
+
+- GWP: Global Warming Potential
