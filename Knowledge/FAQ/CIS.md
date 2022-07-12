@@ -73,7 +73,7 @@
 
   - Scope 1: 직접배출량(연소, 공정 포함)
   - Scope 2: 간접배출량 중 전기, 스팀
-  - Scope 3(Upstream): Scope 1, 2 제와한 나머지
+  - Scope 3(Upstream): Scope 1, 2 제외한 나머지
 
 - LCI DB (Scope 3 중 Upstream의 Emission Factor)
 
