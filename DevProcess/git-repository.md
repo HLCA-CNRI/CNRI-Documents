@@ -1,5 +1,7 @@
 # git-repository
 
+git-flow와 함께 branch 관리를 위한 목적으로 활용
+
 ## Structure
 
 - upstream: HLCA-CNRI
@@ -24,3 +26,22 @@
     - local - push -> origin
     - origin - Pull Request -> upstream
   - PR merge를 위해서는 1명 이상(차후 변경 가능)의 리뷰 필요
+
+## branch Rules
+
+- git-flow:
+  - feature: upstream까지 올리지 않음
+  - release: upstream까지 올림
+  - hotfix: upstream까지 올림
+- push & Pull Request:
+  - push
+    - All: local -> origin
+    - Only Owner: origin -> upstream
+  - Pull Request
+    - All: origin -> upstream
+
+<참고 자료>
+
+- [3.6 Git 브랜치 - Rebase 하기](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0)
+- ["git pull" vs "git pull --rebase"](https://jasonspace.tistory.com/11)
+- [git pull --rebase 를 쓰자](https://jusths.tistory.com/60)
