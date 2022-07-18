@@ -9,4 +9,8 @@
   - [5 Apps That Help You Track and Offset Your Carbon Emissions](https://causeartist.com/apps-offset-your-carbon-emissions/)
   - [25 Carbon Tracking App | Top Apps for Keeping Track Of Your Carbon Footprint](https://makeanapplike.com/app-to-track-carbon-footprint/)
 
-- 기획 참고용
+- 전국 시군구 좌표 구하기 참고
+  - [[QGIS] 시군구별 중심 좌표(위도/경도) 구하기: 파일 열기부터](https://junggam2.tistory.com/55)
+  - [행정안전부\_도로명주소 위치정보 요약DB](https://www.data.go.kr/data/15050410/fileData.do)
+  - [대한민국 행정구역별 위경도 좌표 파일](https://skyseven73.tistory.com/23)
+  - [주민등록주소코드 변경내역(2020.7.20.시행)](https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=78739)
