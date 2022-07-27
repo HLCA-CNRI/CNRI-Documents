@@ -1,6 +1,6 @@
-# References for Project Lyllia
+# References for Project Ciet
 
-프로젝트 릴리아 관련 참고 자료를 수록해둠
+프로젝트 Ciet 관련 참고 자료를 수록해둠
 
 - 타 서비스 벤치마킹 목적 참고용 링크
 

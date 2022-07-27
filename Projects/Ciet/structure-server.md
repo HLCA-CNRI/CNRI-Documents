@@ -9,9 +9,16 @@
 - Test
   - realm: lyllia-test
 
+## Client
+
+- Production
+  - URL: ciet.cnrikorea.com
+- Test
+  - URL: ciet-test.cnrikorea.com
+
 ## API
 
 - Production(미확정)
-  - URL: lyllia-api.cnrikorea.com
-- Test(미확정)
-  - URL: lyllia-api-test.cnrikorea.com
+  - URL: ciet-api.cnrikorea.com
+- Test
+  - URL: ciet-api-test.cnrikorea.com
