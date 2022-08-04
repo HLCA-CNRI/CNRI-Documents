@@ -184,6 +184,8 @@
   deleteById(id: string): Promise<DeleteResult>;
   // Delete Hard
   deleteHardById(id: string): Promise<DeleteResult>;
+  // For Calculation
+  getAverageByCompanyId(id: string, start: Date, end: Date): Promise<number>;
   ```
 - CompanyRepository
   ```ts
