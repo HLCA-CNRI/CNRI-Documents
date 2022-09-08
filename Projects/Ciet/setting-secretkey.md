@@ -1,8 +1,8 @@
 # Github Secret Key 설정하기
 
 ## 목차 
-> - [토큰 설정하기]()  
-> - [필요한 토큰 종류 및 발급 방법]()
+> - [토큰 설정하기](https://github.com/HLCA-CNRI/CNRI-Documents/blob/main/Projects/Ciet/setting-secretkey.md#토큰-설정하기)  
+> - [필요한 토큰 종류 및 발급 방법](https://github.com/HLCA-CNRI/CNRI-Documents/blob/main/Projects/Ciet/setting-secretkey.md#필요한-토큰-종류-및-발급-방법)
 
 
 <br/>
@@ -15,7 +15,7 @@
 2. Setting > Security > Secrets > Actions
 3. 우측 상단의 New repository secret 버튼 클릭 
 4.  Name : 토큰 이름 , Secret : 실제 토큰 내용
-    - 필요한 토큰들은 [필요한 토큰 종류 및 발급방법](https://www.notion.so/Github-Secret-Key-7026adcb46ab4fc19da8d5a27b887081) 참고
+    - 필요한 토큰들은 [필요한 토큰 종류 및 발급방법](https://github.com/HLCA-CNRI/CNRI-Documents/blob/main/Projects/Ciet/setting-secretkey.md#필요한-토큰-종류-및-발급-방법) 참고
 5. 토큰 설정 완료 화면은 아래와 같아야 함. (토큰 순서는 무관)
 ![image](https://user-images.githubusercontent.com/77582221/189015394-87b2e22a-3548-41ad-ab1d-4d58a73580db.png)
 
