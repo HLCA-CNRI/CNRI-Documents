@@ -61,6 +61,10 @@ yarn 설치 시
 
 `yarn set version berry` 해주기
 
+`yarn install` 후, 
+
+`yarn start:dev`로 실행 가능 
+
 <br/>
 
 
