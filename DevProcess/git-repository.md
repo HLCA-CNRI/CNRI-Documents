@@ -18,11 +18,13 @@ git-flow와 함께 branch 관리를 위한 목적으로 활용
   - 각자 자유롭게 commit, push 가능
   - commit message convention 안 지켜도 됨
   - !! upstream으로 Pull Request 할 경우 commit history 정리 필요
-    - commit message convention
+    - commit message convention(맨 앞에 gitmoji 붙이기 등)
     - git rebase -i 활용(squash)
+      - 동일하거나 비슷한 목적의 commit이 여러 개인 경우(이에 따라 여러 개의 commit message가 비슷한 경우) 합치기
+      - ex. bugfix 1, bugfix 2, bugfix 3 -> bugfix
 - origin -> upstream
   - commit message convention 준수
-  - upstream으로 바로 push하지 말고 Pull Request 하기
+  - 관련 구성원 간 합의가 있지 않은 한 upstream으로 바로 push하지 말고 Pull Request 하기
     - local - push -> origin
     - origin - Pull Request -> upstream
   - PR merge를 위해서는 1명 이상(차후 변경 가능)의 리뷰 필요
@@ -30,7 +32,9 @@ git-flow와 함께 branch 관리를 위한 목적으로 활용
 ## branch Rules
 
 - git-flow:
-  - feature: upstream까지 올리지 않음
+  - feature:
+    - 기본적으로 upstream까지 올리지 않음
+    - 다수의 공동 작업 필요한 경우 올림
   - release: upstream까지 올림
   - hotfix: upstream까지 올림
 - push & Pull Request:
