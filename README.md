@@ -2,8 +2,8 @@
 
 The documents of CNRI
 
-탄소중립연구원의 프로젝트 관련 사항을 기록하기 위한 Repo.  
-각각의 프로젝트별 아키텍쳐, DB 구조 등 개발 관련 사항뿐만 아니라 프로젝트의 이해를 위한 탄소 배출, 환경 관련 개념 및 지식도 포함.
+- 탄소중립연구원의 프로젝트 관련 사항을 기록하기 위한 Repo.
+- 각각의 프로젝트별 아키텍쳐, DB 구조 등 개발 관련 사항뿐만 아니라 프로젝트의 이해를 위한 탄소 배출, 환경 관련 개념 및 지식도 포함.
 
 ## Directory structure
 
@@ -22,8 +22,9 @@ The documents of CNRI
 |   |       `-- etc
 |   `-- Planning # 기획
 `-- Projects # 각 프로젝트별 참고 사항 정리
+    |-- Ciet
     |-- CIS # Carbon Intensity Simulator
+    |-- HLCA_Demo_Auth
     |-- Homepage
-    |-- LC # Light Calculator
-    `-- Lyllia
+    `-- LC # Light Calculator
 ```
