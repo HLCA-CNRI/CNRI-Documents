@@ -55,23 +55,49 @@ git flow feature pull REMOTE_NAME MY_FEATURE
 
 5. 릴리스 시작 & 완료하기
 
-```
-// 릴리스 시작하기
-// [BASE]: 릴리스를 시작할 commit. sha-1 해시를 선택적으로 줄 수 있음. 그 commit은 반드시 'develop' 브랜치에 있어야 함.
-git flow release start RELEASE_VERSION [BASE]
+- git flow
 
-// 릴리스 공유하기(upstream까지 올리기)
-git flow release publish RELEASE_VERSION
+  ```
+  // 1. 릴리스 시작하기
+  // RELEASE_VERSION: 0.1.0 과 같은 식으로 버전 지정
+  // [BASE]: 릴리스를 시작할 commit. sha-1 해시를 선택적으로 줄 수 있음. 그 commit은 반드시 'develop' 브랜치에 있어야 함.
+  git flow release start RELEASE_VERSION [BASE]
 
-// 릴리스 불러오기
-git flow release track RELEASE_VERSION
+  // 2. 릴리스 공유하기(upstream까지 올리기)
+  git push origin release/?.?.?
+  git push upstream release/?.?.?
+  // 정석은 아래와 같으나, 이는 origin에만 올라감
+  // git flow release publish RELEASE_VERSION
 
-// 릴리스 완료하기
-git flow release finish RELEASE_VERSION
+  // 2-1. 릴리스 불러오기(다른 사람이 release 올린 경우)
+  git pull upstream release/?.?.?
+  // git-flow에서 release를 불러오는 공식적인 방법은 아래와 같음
+  // 그러나 CNRI는 upstream을 활용하므로 아래 명령을 사용할 수 없음(origin을 대상으로 수행되는 명령이기 때문임)
+  // git flow release track RELEASE_VERSION
 
-// 릴리스 배포하기
-git push --tags
-```
+  // 3. 릴리스 완료하기
+  // 3-1. upstream release/?.?.? -> upstream main PR 만들기
+  // 3-2. 마지막 점검 후 이상 없으면 PR merge 하기
+  // 3-3. merge하여 생성된 commit에 tag 붙이기
+  git tag -a v?.?.? -m "release tag message" 9fceb02
+  // 3-4. tag 올리기(upstream까지)
+  git push origin v?.?.?
+  git push upstream v?.?.?
+  // 정석은 아래와 같으나, 이는 upstream을 사용할 경우 commit history가 복잡해지는 문제가 있어 사용하지 않음
+  // git flow release finish RELEASE_VERSION
+  // 올려야 할 tag가 여러 개인 경우 아래 명령 수행하기
+  // git push origin --tags
+  // git push upstream --tags
+
+  // 4. github release 기록하기
+  // github repository 화면 우측 Releases 클릭
+  // Draft a new release 클릭
+  // Choose a tag에서 tag 선택
+  // Release title 형식: v?.?.? - release에 대한 간략한 설명 한 줄
+  // 내용 입력 및 필요한 경우 이전 tag 지정(기본: auto)
+  // Publish release 눌러서 완료하기
+
+  ```
 
 6. 핫픽스 시작 & 완료하기
 
@@ -96,6 +122,10 @@ git flow hotfix finish VERSION
   - [[Git flow] feature publishing 하기](https://yujuwon.tistory.com/entry/Git-flow-feature-publishing-%ED%95%98%EA%B8%B0)
   - [Gitflow Workflow - Bitbucket](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
   - [우린 Git-flow를 사용하고 있어요 - 우아한형제들 기술 블로그](https://techblog.woowahan.com/2553/)
+
+- git tag 관련
+
+  - [2.6 Git의 기초 - 태그](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8)
 
 - etc.
   - [2.5 Git의 기초 - 리모트 저장소](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C)
