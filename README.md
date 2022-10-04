@@ -20,6 +20,7 @@ The documents of CNRI
 |   |       |-- Fashion
 |   |       |-- QuiteThick # 양이 많은 자료
 |   |       `-- etc
+|   `-- Planning # 기획
 `-- Projects # 각 프로젝트별 참고 사항 정리
     |-- Ciet
     |-- CIS # Carbon Intensity Simulator
