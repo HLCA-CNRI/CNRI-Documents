@@ -259,4 +259,11 @@ api확인 및 테스트 하는 곳
     <img src="https://user-images.githubusercontent.com/77582221/188628527-070ee680-7f1c-4f1c-b725-82bfe945c135.png" width="80%"/>
 </div>
 
+6. [http://localhost:8080](http://localhost:8080) 접속 → 왼쪽 nav 에서 Users  선택 → view all users  → user_company로 전환한 계정 선택 → Groups 
+   ![image](https://user-images.githubusercontent.com/77582221/194007286-b760db25-5ca1-4b1c-93c5-e93bab7e539d.png)
+
+   
+    
+    위와 같이 변경
+
      
